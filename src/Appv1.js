@@ -1,4 +1,4 @@
-function App(){
+function Appv1(){
     const title = 'Blog Post'
     const body = 'This is my blog post'
     const comments = [
@@ -40,4 +40,4 @@ function App(){
     )
 }
 
-export default App
+export default Appv1
