@@ -18,8 +18,6 @@ const headerStyles =  {
 
 Header.defaultProps = {
     text: "Feedback UI", 
-    bgColor : 'maroon',
-    textColor : 'rgba(0, 0, 0, 0.4)',
 }
 
 Header.propTypes = {
