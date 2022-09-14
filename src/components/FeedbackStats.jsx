@@ -8,8 +8,6 @@ let average = feedback.reduce((acc, curr) => {
 
 average = average.toFixed(1).replace(/[.,]0$/, '') // 1 digito decimal, si es cero se reemplaza con nada
 
-console.log(average)
-
   return (
     <div className="feedback-stats">
         <h4> {feedback.length} Reviews </h4> 
