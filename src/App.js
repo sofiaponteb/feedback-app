@@ -8,6 +8,7 @@ import FeedbackForm from "./components/FeedbackForm"
 import AboutPage from "./pages/AboutPage"
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import AboutIconLink from "./components/AboutIconLink"
+import Post from "./pages/Post"
 
 function App(){
     const [feedback, setFeedback] = useState(FeedbackData)
@@ -34,15 +35,16 @@ function App(){
                     <FeedbackForm handleAdd={addFeedback} />
                     <FeedbackStats feedback = {feedback} />
                     <FeedbackList feedback = {feedback} handleDelete = { deleteFeedback } />
-                    <AboutIconLink  />
                     </>
                 }> 
                 
                 </Route>
 
                 <Route path='/about' element = {<AboutPage/>} />
+                <Route path = '/post/:id/:name' element={<Post />} />
             </Routes>
         </div>
+        <AboutIconLink  />
         </Router>
     )
 }
